@@ -1,0 +1,166 @@
+.dashboard {
+    min-height: 100vh;
+    padding: 40px 7%;
+    background: #eef5e9;
+    color: #3f6040;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #3f6040;
+}
+
+.dashboard-header p {
+    color: #78916f;
+    margin-top: 7px;
+}
+
+.dashboard-header::before {
+    content: "🌿";
+    font-size: 45px;
+    margin-right: 12px;
+}
+
+.logout-btn {
+    background: #fffdf7;
+    color: #587552;
+    border: 1.5px solid #cbdcc2;
+    padding: 10px 18px;
+    border-radius: 12px;
+}
+
+.logout-btn:hover {
+    background: #dfead8;
+}
+
+.event-form {
+    background: #fffdf7;
+    padding: 28px;
+    border-radius: 22px;
+    border: 1.5px solid #d5e4ca;
+    box-shadow: 0 8px 25px rgba(74, 101, 68, 0.08);
+    margin-bottom: 35px;
+}
+
+.event-form h2 {
+    margin-top: 0;
+    color: #4d7049;
+}
+
+.event-form input {
+    padding: 12px 14px;
+    border: 1.5px solid #cbdcc2;
+    border-radius: 12px;
+    background: #f8fbf5;
+    margin-right: 8px;
+    outline: none;
+}
+
+.event-form input:focus {
+    border-color: #7da477;
+}
+
+.add-btn {
+    background: #6f9568;
+    color: white;
+    border-radius: 12px;
+}
+
+.add-btn:hover {
+    background: #587d52;
+}
+
+.dashboard h2 {
+    color: #4d7049;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 22px;
+}
+
+.event-card {
+    background: #fffdf7;
+    padding: 26px;
+    border-radius: 22px;
+    border: 1.5px solid #d5e4ca;
+    box-shadow: 0 8px 25px rgba(74, 101, 68, 0.08);
+    position: relative;
+    transition: 0.2s;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(74, 101, 68, 0.13);
+}
+
+.event-card::before {
+    content: "✓";
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    width: 30px;
+    height: 30px;
+    background: #dcebd5;
+    color: #52724d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    color: #466844;
+    font-size: 20px;
+}
+
+.countdown {
+    background: #edf5e8;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 18px 0;
+    color: #52724d;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.edit-btn {
+    background: #a7bd91;
+    color: white;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.edit-btn:hover {
+    background: #8fa97b;
+}
+
+.delete-btn {
+    background: #d98787;
+    color: white;
+    border-radius: 10px;
+}
+
+.delete-btn:hover {
+    background: #c66f6f;
+}
+
+.dashboard > p {
+    background: #fffdf7;
+    padding: 25px;
+    border-radius: 18px;
+    color: #78916f;
+}

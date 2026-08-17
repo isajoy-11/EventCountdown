@@ -1,0 +1,110 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef5e9;
+    position: relative;
+    overflow: hidden;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* Cute decorative leaves */
+.login-page::before {
+    content: "🌿";
+    position: absolute;
+    font-size: 90px;
+    top: 40px;
+    left: 70px;
+    transform: rotate(-20deg);
+    opacity: 0.7;
+}
+
+.login-page::after {
+    content: "🌱";
+    position: absolute;
+    font-size: 80px;
+    bottom: 30px;
+    right: 70px;
+    transform: rotate(15deg);
+    opacity: 0.7;
+}
+
+.login-box {
+    width: 400px;
+    background: #fffdf7;
+    padding: 45px;
+    border-radius: 28px;
+    border: 2px solid #d5e4ca;
+    box-shadow: 0 15px 40px rgba(74, 101, 68, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+/* little bunny */
+.login-box::before {
+    content: "🐰";
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 5px;
+}
+
+.login-box h1 {
+    text-align: center;
+    color: #3f6040;
+    margin: 0;
+    font-size: 28px;
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #78916f;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 8px 0 30px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 15px;
+    border: 1.5px solid #cbdcc2;
+    border-radius: 13px;
+    background: #f8fbf5;
+    color: #3f6040;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #7da477;
+    box-shadow: 0 0 0 3px rgba(125, 164, 119, 0.15);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 13px;
+    background: #6f9568;
+    color: white;
+    border-radius: 13px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.login-btn:hover {
+    background: #587d52;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #c96b6b;
+    text-align: center;
+    margin-top: 15px;
+}
